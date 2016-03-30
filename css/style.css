@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue Light', Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('helveticaneue-light-webfont.eot');
+    src: url('helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('helveticaneue-light-webfont.woff2') format('woff2'),
+    url('helveticaneue-light-webfont.woff') format('woff'),
+    url('helveticaneue-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    padding: 235px 195px 200px 380px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.menu {
+    height: 40px;
+    font-size: 14px;
+    list-style: none;
+    background: url(../img/upperbg.png);
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+    color: #60b5ed;
+    line-height: 40px;
+}
+
+.menu a:hover {
+    background-color: #4eabda;
+    color: #fff;
+}
+
+.img span {
+    display: block;
+    margin: 5px 3px 0 2px;
+}
+
+.flag {
+    border-left: 1px solid #56a2dc;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.min {
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    color: #60b5ed;
+}
+
+.min span:hover {
+    text-decoration: underline;
+}
+
+.flag::before {
+    content: url(../img/flag.png);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.regin {
+    background: linear-gradient(to bottom, #4faedb, #2e7ac4);
+    color: white;
+    padding-left: 15px;
+    margin-right: 15px;
+}
+.regin > li > a {
+    color: white;
+    text-decoration: underline;
+}
+
+.menu::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.box {
+    width: 620px;
+    height: 690px;
+    background-color: rgba(39,41,15, .5);
+    text-align: center;
+}
+
+.cadastre {
+    position: relative;
+    padding-top: 30px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.facebook {
+    display: block;
+    border-radius: 4px;
+    margin-left: 200px;
+    width: 225px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #3e559b, #2b4276);
+    font-family: Arial, sans-serif;
+    padding: 0 auto;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.facebook:before {
+    border-right: 2px groove #4c68a9;
+    content: 'f';
+    font-weight: 900;
+    padding: 0 15px;
+    float: left;
+    font-size: 24px;
+}
+
+.login {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.with {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 200;
+}
+
+.info {
+    width: 273px;
+    height: 32px;
+    text-align: left;
+    margin: 0 25px 15px 55px;
+    padding: 10px 100px 10px 5px;
+    background: #0f0f0f;
+    border: 0;
+    box-shadow: 0 4px 2px -2px rgb(69, 69, 69);
+}
+.info:focus {
+    background: #1b5288;
+}
+
+p {
+    margin: 0 10px 20px -5px;
+    color: #c2c2c2;
+}
+
+.check {
+    padding: 5px 65px 0 0;
+}
+
+label {
+    padding-left: 15px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    background: linear-gradient(#73bffa, #4693cf) #3685c2;
+    cursor: pointer;
+}
+
+.footer {
+    width: 330px;
+    margin: 25px 0 0 130px;
+    color: #adadaa;
+}
