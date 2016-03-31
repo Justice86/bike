@@ -16,17 +16,18 @@
 }
 
 .wrapper {
-    box-sizing: border-box;
-    padding: 235px 195px 200px 380px;
+    height: 1020px;
     background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
 }
 
 .menu {
     height: 40px;
+    background: url('../img/upperbg.png');
     font-size: 14px;
     list-style: none;
-    background: url(../img/upperbg.png);
 }
 
 .menu ul {
@@ -38,11 +39,11 @@
 }
 
 .menu a {
-    padding: 0 15px;
     display: block;
-    text-decoration: none;
+    padding: 0 15px;
     color: #60b5ed;
     line-height: 40px;
+    text-decoration: none;
 }
 
 .menu a:hover {
@@ -55,37 +56,29 @@
     margin: 5px 3px 0 2px;
 }
 
-.flag {
-    border-left: 1px solid #56a2dc;
-    padding: 0 10px;
-    color: #fff;
+.border {
+    margin-top: 3px;
 }
 
-.min {
-    text-align: right;
-    vertical-align: middle;
-    display: inline-block;
-    color: #60b5ed;
+.flag a::before {
+    margin: 5px 10px 0;
+    float: left;
+    content: url('../img/flag.png');
 }
 
 .min span:hover {
     text-decoration: underline;
 }
 
-.flag::before {
-    content: url(../img/flag.png);
-    display: inline-block;
-    vertical-align: middle;
+.regin {
+    margin-right: 15px;
+    padding-left: 15px;
+    background: linear-gradient(to bottom, #4faedb, #2e7ac4);
+    color: #fff;
 }
 
-.regin {
-    background: linear-gradient(to bottom, #4faedb, #2e7ac4);
-    color: white;
-    padding-left: 15px;
-    margin-right: 15px;
-}
 .regin > li > a {
-    color: white;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -96,68 +89,76 @@
 }
 
 .box {
-    width: 620px;
-    height: 690px;
-    background-color: rgba(39,41,15, .5);
+    width: 500px;
+    margin: 180px 0 0 450px;
+    background-color: rgba(39, 41, 15, .5);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .cadastre {
     position: relative;
-    padding-top: 30px;
     height: 20px;
-    text-align: center;
+    padding-top: 23px;
     font-size: 20px;
+    text-align: center;
 }
 
 .facebook {
     display: block;
-    border-radius: 4px;
-    margin-left: 200px;
-    width: 225px;
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(to bottom, #3e559b, #2b4276);
-    font-family: Arial, sans-serif;
+    width: 278px;
+    margin: 40px 0 0 120px;
     padding: 0 auto;
+    border: 0;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #3e559b, #2b4276);
+    color: #fff;
+    font-family: Arial, sans-serif;
     line-height: 35px;
-    border: none;
+    text-decoration: none;
     cursor: pointer;
 }
 
 
-.facebook:before {
-    border-right: 2px groove #4c68a9;
-    content: 'f';
-    font-weight: 900;
+.facebook::before {
     padding: 0 15px;
     float: left;
+    border-right: 2px groove #4c68a9;
     font-size: 24px;
+    font-weight: 900;
+    content: 'f';
 }
 
 .login {
     font-family: Arial, sans-serif;
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
 }
+
 .with {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     font-weight: 200;
 }
 
+.ou {
+    margin: 25px 0 25px 8px;
+}
+
 .info {
-    width: 273px;
-    height: 32px;
-    text-align: left;
-    margin: 0 25px 15px 55px;
+    width: 175px;
+    height: 15px;
+    margin: 0 25px 15px 33px;
     padding: 10px 100px 10px 5px;
-    background: #0f0f0f;
     border: 0;
+    background: #0f0f0f;
+    text-align: left;
     box-shadow: 0 4px 2px -2px rgb(69, 69, 69);
 }
+
 .info:focus {
     background: #1b5288;
+    box-shadow: 0 0 3px 2px #689bcc;
 }
 
 p {
@@ -166,7 +167,8 @@ p {
 }
 
 .check {
-    padding: 5px 65px 0 0;
+    padding: 5px 17px 0 0;
+    font-size: 14px;
 }
 
 label {
@@ -176,17 +178,19 @@ label {
 .button {
     width: 150px;
     height: 40px;
-    padding: 10px 15px 10px 15px;
-    color: white;
-    outline: none;
+    padding: 10px 15px;
+    border: 0;
     border-radius: 5px;
-    border:none;
+    outline: none;
     background: linear-gradient(#73bffa, #4693cf) #3685c2;
+    color: #fff;
     cursor: pointer;
 }
 
 .footer {
     width: 330px;
-    margin: 25px 0 0 130px;
+    margin: 22px 0 20px 90px;
+    padding-bottom: 30px;
     color: #adadaa;
+    font-size: 11px;
 }
